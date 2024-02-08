@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dhnmrt
+  name: dhkmer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dhnmrt
+      app: dhkmer
   template:
     metadata:
       labels:
-        app: dhnmrt
+        app: dhkmer
     spec:
       containers:
-      - image: okteto.dev/dhnmrt:latest
-        name: dhnmrt
+      - image: okteto.dev/dhkmer:latest
+        name: dhkmer
         ports:
         - containerPort: 8080
         env:
